@@ -8,7 +8,7 @@ function App() {
     const name = todoNameRef.current.value;
     if (name === "") return;
     setTodos((prevTodos) => {
-      return [...prevTodos, { id: uuidv4(), name: name, complete: false }];
+      return [...prevTodos, { id: 1, name: name, complete: false }];
     });
     console.log(name);
     todoNameRef.current.value = null;
